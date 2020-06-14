@@ -24,7 +24,7 @@ mostrarOpcionesMenuPrincipal();
 /*Aqui empieza*/
 fflush(stdin);
 
-printf("\nIngrese una opciÛn para continuar:\n ");
+printf("\nIngrese una opci√≥n para continuar:\n ");
 
 
 
@@ -47,7 +47,7 @@ switch (selec) {
 		
 		break;
 	default:
-		printf("\nopciÛn inv·lida");
+		printf("\nopci√≥n inv√°lida");
 		break;
 	
 }
@@ -77,7 +77,7 @@ do {
 		printf("\nNombre: ");
 		scanf("%250[^\n]", nombreDeUsuario);
 		fflush(stdin);
-		printf("\nøconfirmar? S/N\n");
+		printf("\n¬øconfirmar? S/N\n");
 		scanf("%c", &sn);
 		tolower(sn);
 		
@@ -90,7 +90,7 @@ do {
    }while (confirmar == 0); 
 
 /*Se obtien la estatura*/
-printf("Bienvenido, %s. Ingrese su estatura en metros, esta nos permitir· realizar calculos en algunas d nuestras herramientas.\n", nombreDeUsuario);
+printf("Bienvenido, %s. Ingrese su estatura en metros, esta nos permitir√° realizar calculos en algunas d nuestras herramientas.\n", nombreDeUsuario);
 
 sn = 'n';
 confirmar = 0; 
@@ -99,7 +99,7 @@ confirmar = 0;
 		printf("Estatura: ");
 		scanf("%f", estaturaDeUsuario);
 		fflush(stdin);
-		printf("\nøconfirmar? S/N\n");
+		printf("\n¬øconfirmar? S/N\n");
 		scanf("%c", &sn);
 		tolower(sn);
 		
@@ -111,7 +111,7 @@ confirmar = 0;
 		
    }while (confirmar == 0); 
 
-printf("\n Ingrese  m  para masculino Û  f  para femenino\n"); /*Se obtiene el genero*/
+printf("\n Ingrese  m  para masculino √≥  f  para femenino\n"); /*Se obtiene el genero*/
 
 confirmar = 0;	
 sn = 'n';
@@ -134,7 +134,7 @@ do {
 				break;
 			default:
 				entradaValida = 0;
-				printf("OpciÛn no v·lida, intente nuevamente...\n");
+				printf("Opci√≥n no v√°lida, intente nuevamente...\n");
 				break; 
 			}
 		} while (entradaValida == 0);
@@ -142,7 +142,7 @@ do {
 		
 		
 		fflush(stdin);
-		printf("\nøconfirmar? S/N\n");
+		printf("\n¬øconfirmar? S/N\n");
 		scanf("%c", &sn);
 		tolower(sn);
 		
@@ -161,10 +161,10 @@ do {
  void mostrarOpcionesMenuPrincipal ()
  {
 	printf("\n/*/*/*/*/*/*/*//*/*/*/*//*/*/*/*/*/*//*/*/*/*/*/*/*/*//**/*/*/*/*/*/*//*/\n");
-	printf("\n 1. CAT¡LOGO DE EJERCICIOS");	
+	printf("\n 1. CAT√ÅLOGO DE EJERCICIOS");	
 	printf("\n 2. REGISTRO DE MASA CORPORAL Y EJERCICIOS");
 	printf("\n 3. CALCULADORAS "); /*hay que corregir esta linea diciendo las calculadoras dosponibles*/
-	printf("\n 4. COMPARACI”N DE PESO Y ACTIVIDADES A LO LARGO DEL TIEMPO");
+	printf("\n 4. COMPARACI√ìN DE PESO Y ACTIVIDADES A LO LARGO DEL TIEMPO");
 	printf("\n/*/*/*/*/*/*/*//*/*/*/*//*/*/*/*/*/*//*/*/*/*/*/*/*/*//**/*/*/*/*/*/*//*/\n");
   	
  }
@@ -173,9 +173,9 @@ do {
  
  struct E efectuarRegistroDeActividad() {
  	struct E temporal;
- 	printf("\nIngrese la cantida de series que realizo durante el dÌa: ");
+ 	printf("\nIngrese la cantida de series que realizo durante el d√≠a: ");
  	scanf("%d",&temporal.SERIES); 
- 	printf("\nIngrese las repeticiones por serie realizadas en el dÌa: ");
+ 	printf("\nIngrese las repeticiones por serie realizadas en el d√≠a: ");
  	scanf("%d",&temporal.REPET);
  	
  	return temporal; 	
@@ -189,7 +189,7 @@ do {
 
         int OPCN = 0;
         system("cls");
-        printf("Bienvenido al registro de ejercicios o peso, aquÌ podra registrar los ejercicios que ha realizado\n");
+        printf("Bienvenido al registro de ejercicios o peso, aqu√≠ podra registrar los ejercicios que ha realizado\n");
         printf(" y registrar su peso semana a semana.");
         printf("\n************************************************************************************************\n");
 
@@ -214,7 +214,7 @@ do {
         case 3: break;
 
         default:
-            printf("\nOpciÛn inv·lida\n");
+            printf("\nOpci√≥n inv√°lida\n");
             system("pause");
             fMenuR();
             break;
@@ -223,7 +223,7 @@ do {
 
 /*----------SIGUIENTE FUNCION---------- */
 
-void fEscE(){ //FunciÛn para escoger el ejercicio su semana 
+void fEscE(){ //Funci√≥n para escoger el ejercicio su semana 
     int SELEC = 0;
     int SEMANA =0;
     int DIA = 0;
@@ -267,7 +267,7 @@ void fEscE(){ //FunciÛn para escoger el ejercicio su semana
 			repetir=1;
     		do{
     			int opcion;
-    			printf("Indica el dÌa que deseas registrar, ingrese 9 para regresar \n "
+    			printf("Indica el d√≠a que deseas registrar, ingrese 9 para regresar \n "
 		"\n\t 0. Lunes \n\t 1. Martes \n\t 2. Miercoles \n\t 3. Jueves \n\t 4. Viernes \n\t 5. Sabado \n\t 6. Domingo\n");  			
     			do{				
 				scanf("%d", &DIA);
@@ -297,7 +297,7 @@ void fEscE(){ //FunciÛn para escoger el ejercicio su semana
 
 	
 	
-	/*Debe realizarse un codigo que permita elegir constantemente entre semanas y dÌas*/
+	/*Debe realizarse un codigo que permita elegir constantemente entre semanas y d√≠as*/
 	
 		
 	
@@ -321,7 +321,7 @@ PESO_t fRegP(){
 	
 	system("cls");
 	
-	printf("\nBienvenido(a) en esta secciÛn podras registrar tu peso semanal y con ello calcular tu promedio.");
+	printf("\nBienvenido(a) en esta secci√≥n podras registrar tu peso semanal y con ello calcular tu promedio.");
 	
 	//Se obtiene la semana incial
 	do{
@@ -361,10 +361,10 @@ PESO_t fRegP(){
 		case 2: fMenuR();
 				return NPESO;
 				break;
-		case 3:	mostrarOpcionesMenuPrincipal();
+		case 3:
 				return NPESO;
 				break;
-		default:printf("\nOpcion invalida");
+		default:printf("\nOpci√≥n invalida");
 				fMenuPR();
 				break;
 		
