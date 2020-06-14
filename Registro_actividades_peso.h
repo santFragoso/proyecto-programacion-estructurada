@@ -4,7 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-//Estructuras, se creo una estructura por cada ejercicio acorde a E1.....E30 SEGUN CORRESPONDA
+//Estructuras
 
 
 typedef struct E{
