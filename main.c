@@ -11,7 +11,7 @@ void registrarActividadesYPeso();
 /*******/
 
 int main () { 
-
+setlocale(LC_CTYPE, "spanish");
 char nombreDeUsuario[250];
 float estaturaDeusuario; /*ESTAS SON LAS VARIABLES DE LA INFO DEL USUARIO, SE USARAN A LO LARGO DEL PROGRAMA*/
 char genero; 
